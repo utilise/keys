@@ -1,5 +1,5 @@
 {
-  "name": "base",
+  "name": "keys",
   "version": "0.0.0",
   "main": "es5.js",
   "scripts": {
