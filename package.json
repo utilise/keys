@@ -1,0 +1,20 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "main": "es5.js",
+  "scripts": {
+    "build": "babel es6.js -o es5.js",
+    "test": "istanbul test ./node_modules/mocha/bin/_mocha --report html -- -R spec",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage"
+  },
+  "author": "Pedram Emrouznejad (https://github.com/pemrouz)",
+  "license": "pemrouz.mit-license.org",
+  "devDependencies": {
+    "babel": "^5.2.6",
+    "chai": "^2.3.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "mocha-lcov-reporter": "0.0.2"
+  }
+}
