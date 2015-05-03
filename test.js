@@ -1,5 +1,5 @@
 var expect = require('chai').expect
-  , keys   = require('./es5')
+  , keys   = require('./')
 
 describe('keys', function() {
   it('should convert object keys to array', function() {
