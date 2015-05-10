@@ -3,7 +3,11 @@ var expect = require('chai').expect
 
 describe('keys', function() {
   it('should convert object keys to array', function() {
-    var o = { a: 1, b: 2}
+    var o = { a: 1, b: 2 }
     expect(keys(o)).to.eql(['a','b'])
+  })
+
+  it('should default gracefully if falsy passed in', function() {
+    expect(keys(undefined)).to.eql([])
   })
 })
