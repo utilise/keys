@@ -9,5 +9,6 @@ describe('keys', function() {
 
   it('should default gracefully if falsy passed in', function() {
     expect(keys(undefined)).to.eql([])
+    expect(keys(10)).to.eql([])
   })
 })
