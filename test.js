@@ -11,4 +11,10 @@ describe('keys', function() {
     expect(keys(undefined)).to.eql([])
     expect(keys(10)).to.eql([])
   })
+
+  it('should work on functions', function() {
+    String.foo = 'wat'
+    expect(keys(String)).to.eql(['foo'])
+  })
+
 })
